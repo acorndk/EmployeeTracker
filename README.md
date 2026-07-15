@@ -1,2 +1,2 @@
-# PersonalTracking
+# EmployeeTracker
 WPF + MS SQL
