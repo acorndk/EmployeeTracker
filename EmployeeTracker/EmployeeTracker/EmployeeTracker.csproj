@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="employee_tracker_app_icon.png" />
+    <None Remove="Images\Department.png" />
+    <None Remove="Images\Employee.png" />
+    <None Remove="Images\employee_tracker_app_icon.png" />
+    <None Remove="Images\Exit.png" />
+    <None Remove="Images\Logout.png" />
+    <None Remove="Images\Permission.png" />
+    <None Remove="Images\Position.png" />
+    <None Remove="Images\Salary.png" />
+    <None Remove="Images\Task.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="10.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Database\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="employee_tracker_app_icon.png" />
+    <Resource Include="Images\Department.png" />
+    <Resource Include="Images\Employee.png" />
+    <Resource Include="Images\employee_tracker_app_icon.png" />
+    <Resource Include="Images\Exit.png" />
+    <Resource Include="Images\Logout.png" />
+    <Resource Include="Images\Permission.png" />
+    <Resource Include="Images\Position.png" />
+    <Resource Include="Images\Salary.png" />
+    <Resource Include="Images\Task.png" />
+  </ItemGroup>
+
+</Project>
