@@ -13,7 +13,17 @@ namespace EmployeeTracker.Views
             InitializeComponent();
 
             using EmployeeTrackerContext db = new();
-            var list = db.Departments.ToList();
+            var list = db.Departments.OrderBy(x => x.Name).ToList();
+            gridDepartment.ItemsSource = list;
+        }
+
+        private void btnAdd_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            DepartmentPage page = new DepartmentPage();
+            page.ShowDialog();
+
+            using EmployeeTrackerContext db = new();
+            var list = db.Departments.OrderBy(x => x.Name).ToList();
             gridDepartment.ItemsSource = list;
         }
     }
