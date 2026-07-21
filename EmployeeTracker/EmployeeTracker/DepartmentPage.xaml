@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EmployeeTracker"
         mc:Ignorable="d"
-        Title="Department Page" ResizeMode="NoResize" FontWeight="Bold" FontSize="18" WindowStartupLocation="CenterScreen" Height="200" Width="350" Icon="/Images/employee_tracker_app_icon.png" Background="#FF7EC7FF">
+        Title="Department Page" ResizeMode="NoResize" FontWeight="Bold" FontSize="18" WindowStartupLocation="CenterScreen" Height="200" Width="350" Icon="/Images/employee_tracker_app_icon.png" Background="#FF7EC7FF" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>

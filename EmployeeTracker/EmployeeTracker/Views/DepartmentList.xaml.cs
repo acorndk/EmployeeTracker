@@ -21,7 +21,20 @@ namespace EmployeeTracker.Views
         {
             DepartmentPage page = new DepartmentPage();
             page.ShowDialog();
+            RefreshDepartmentList();
+        }
 
+        private void btnUpdate_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            Department department = (Department)gridDepartment.SelectedItem;
+            DepartmentPage page = new DepartmentPage();
+            page.department = department;
+            page.ShowDialog();
+            RefreshDepartmentList();
+        }
+
+        private void RefreshDepartmentList()
+        {
             using EmployeeTrackerContext db = new();
             var list = db.Departments.OrderBy(x => x.Name).ToList();
             gridDepartment.ItemsSource = list;
